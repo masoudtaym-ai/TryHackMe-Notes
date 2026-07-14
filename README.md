@@ -49,3 +49,25 @@ Control
 . Host Address is like the house number in this analogy telling where its located in the "neighborhood block:
 . Default Gateway is like the entrance gate for this anology any data going in and out has to go to here to be directed to its intended location
 
+## ARP Address Resolution Protocol
+
+technology that is responsible for allowing devices to identify themselves on a network
+
+An ARP connects a MAC address with its respected IP address
+In order to map these two identifiers together, ARP sends two typs of messages
+
+1. ARP Request
+2. ARP Reply
+
+a message is broadcasted on the network to other devices asking "what is the mac address that owns this IP ?" 
+when other devices receive that message, only the owner of that IP address will send an ARP reply with its MAC address
+after that the requesting device will now remember this mapping and store it in its ARP cache for future use
+
+## DHCP Dynamic Host Configuration Protocol
+
+automatically assigns a IP address to a computer
+
+
+
+
+
