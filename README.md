@@ -67,7 +67,39 @@ after that the requesting device will now remember this mapping and store it in 
 
 automatically assigns a IP address to a computer
 
+IP can also be physically inputted into a device but much more common to use DHCP
 
+# Inside a Computer System
 
+## Intro
 
+Understanding physical parts of a computer
+
+Passed a practical test about each component and what they do inside a computer system
+
+<img width="1186" height="930" alt="image" src="https://github.com/user-attachments/assets/6a1d80d3-1bc1-4a35-b97d-775ec3bccfe1" />
+
+## What happens when you boot up a computer? 
+
+Step 1: Press the Power Button
+When we press the power button on our computer system, a signal is sent to the PSU to allow power to flow
+
+Step 2: Firmware starts
+our core components are up and running, but our "brain" is not yet conscious. Like our bodies, a computer system contains firmware that allows all its components to start up. The central system that manages this is called the Unified Extensible Firmware Interface (UEFI)
+
+Step 3: Power-On Self Test
+Now that it is up and running, it is time to test if everything is functioning as it should. If something isn't, there will be some alarm signals. One of the routines that the UEFI loads is the Power-On Self Test, which tests if every required component is present, configured correctly, and functioning.
+
+Step 4: Select Boot Device
+system searches for the location of our bootup routine to start. the UEFI holds an ordered list which prioritizes on which device to look first for the boot up routine for the Operating System.
+
+Step 5: Initiate Bootloader
+initiates the "load routine" to start it. Our computer systems follow a similar process: On the selected boot device, the bootloader is initiated. This bootloader transfers the Operating System from the selected boot device to the Random Access Memory. Once the is transferred, the UEFI gives control over the different components to the OS.
+
+Passed an exam to memorize all parts of the boot up sequence.
+<img width="1174" height="1132" alt="image" src="https://github.com/user-attachments/assets/5548464a-358d-42af-9bf1-b623068795e7" />
+
+# Computer Types
+
+##Intro
 
