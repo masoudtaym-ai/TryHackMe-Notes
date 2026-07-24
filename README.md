@@ -101,5 +101,104 @@ Passed an exam to memorize all parts of the boot up sequence.
 
 # Computer Types
 
-##Intro
+## Intro
+
+learn the Ablity to identify and distinguish between different types of computers in use directly, such as laptops and smartphones, and indirectly, such as servers, devices, and embedded systems. will also understand what makes each type suited to its purpose.
+
+<img width="965" height="417" alt="image" src="https://github.com/user-attachments/assets/9984bc67-2f10-42c3-ac7e-7d4014973ced" />
+
+<img width="1487" height="386" alt="image" src="https://github.com/user-attachments/assets/553d628a-e437-490b-bc44-0c5cebbd4c5a" />
+
+IOT vs Embedded: Both can be small and single-purpose. The difference is connectivity. IOT devices connect to a network to report data or receive commands. Embedded computers might not connect to anything; they do their job inside the machine, often for years without anyone knowing they exist.
+
+completed an interactive challenge/exam about each type of computer its benefits and downsides and how they are different
+<img width="1163" height="802" alt="image" src="https://github.com/user-attachments/assets/8b9748cc-1c41-48e3-9070-fbb4ea144e20" />
+
+# Client-Server Basics
+
+## Learning Objectives
+
+Understand the Client-Server model
+Understand the following concepts on a surface level:
+
+  DNS
+  Client
+  Server
+  Port
+  Protocol
+  Network
+
+Service, Client, Server
+there is a client that requests and a server that serves what it needs.
+client is the one who always initiates the request.
+
+Request and Response
+we can say that a user used a browser (the client) to request a webpage from a server, which then sent the webpage to the client.
+
+Protocol
+Protocol which computer systems use to communicate. A protocol defines how a client can communicate with a server. This definition includes:
+
+Which commands do the client and server understand. E.g., the get command.
+How a request is structured. E.g., first the command and then the order.
+What syntax is used. E.g., user uses the English language.
+What response should be given to which type of request. E.g., a request for pizza results in receiving the available pizza.
+What response to give to faulty requests. E.g., the server at Luigi's Pizzas says: No pepereonni pizza available
+
+Port
+A port is used to identify a specific service running on a system. When a client wants to access a service on a server, it must connect using the correct port.
+
+DNS
+DNS stands for Domain Name Service and works similarly to GPS: when you enter the name of, for example, a website, DNS resolves it to server's location. These location coordinates are called an Internet Protocol (IP) address in computer terms.
+
+## Web Communication 
+
+Hypertext Transfer Protocol (Secure), abbreviated as HTTP(S), is a stateless client-server protocol used for the World Wide Web.
+This means that each request is processed independently, without the server retaining information about previous requests.
+
+Although the protocol itself is stateless, modern websites and web applications implement mechanisms to introduce statefulness at the application level. (Cookies or token)
+
+## HTTP Commands
+
+ there are 9 core commands. In HTTP lingo, we use the term method instead of command. Below you can see an overview of these methods:
+ 
+GET
+POST
+PUT
+DELETE
+PATCH
+HEAD
+OPTIONS
+CONNECT
+TRACE
+
+Using a Virtual machine to learn each HTTP command and using real world examples passing each test.
+<img width="1122" height="1272" alt="image" src="https://github.com/user-attachments/assets/142248da-e419-40a4-8a56-bdfe7302ec12" />
+Scheme: Tells us which protocol was used: HTTP or HTTPS.
+Host: Tells us the name of the host we request resources from.
+Filename: Indicates which file we requested from the host. In our request, this is "/", which actually translates to "index.html".
+Address: Displays the IP address where the website is hosted. In our example, we are hosting the website on the same device. That's why the address 127.0.0.1 is shown.
+Status: This field indicates whether the request was successful. In our example, we received a "200 OK" status, which means that the request was successful.
+
+# Virtualisation Basics
+
+## Learning Objectives
+
+  Understand why managing applications on individual physical servers is inefficient.
+  Learn how virtualization addresses hardware utilization and scalability challenges.
+  Understand the components of a lab machine.
+  Learn how containers have further optimized hardware utilization for applications.
+
+## Virtualization Overview 
+
+In the early days, digital services were run on physical machines, and each machine typically had a single, clear purpose, such as hosting a website or storing data. As businesses added more services, they naturally increased the number of physical servers, and the “one job per box” approach became the standard for building reliable systems.
+
+The problems were obvious:
+High cost: Buying multiple physical servers is expensive, not just the hardware, but also electricity, cooling, maintenance, and data center space.
+Low utilization: Most applications don’t use the server’s full capacity. Many servers stayed at 5–20% usage, wasting , memory, and storage resources.
+Slow deployment: Setting up new physical servers could take days or weeks.
+Hard to scale: If an application suddenly needed more resources, you often had to buy yet another server.
+
+A virtualization layer, called a hypervisor, was introduced to act as a referee between lab machines and allow each virtual computer to behave independently, like a physical computer.
+
+Each virtual computer, known as a Lab Machine (VM), acts as an independent system with its own operating system, apps, and settings, even though they all share the same physical hardware underneath.
 
